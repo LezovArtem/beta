@@ -85,3 +85,5 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin\User', 'prefix' => 'adm
 Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->middleware(['auth', 'verified'])->name('home');
+
+
